@@ -37,18 +37,21 @@ int main()
         }
 
         // print line once at the end
-        if (c == '\n' && status == IN_CONTENT)
+        if (c == '\n')
         {
-            if (char_count < (MAXLENGTH - 1))
+            if (status == IN_CONTENT)
             {
-                line[char_count + 1] = '\0';
-            }
-            else
-            {
-                line[MAXLENGTH - 1] = '\0';
-            }
+                if (char_count < (MAXLENGTH - 1))
+                {
+                    line[char_count + 1] = '\0';
+                }
+                else
+                {
+                    line[MAXLENGTH - 1] = '\0';
+                }
 
-            print_line(line, last_char);
+                print_line(line, last_char);
+            }
 
             // reset for next loop
             i = -1;
