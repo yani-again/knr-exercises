@@ -7,7 +7,5 @@ end user in mind.
 In most cases, the programs are written for the sake of completion to allow me
 to practice my C skills and ensure I can satisfy the exercise criteria.
 
-In some cases, the `README` file will outline decisions I have made for the
+In some cases, the `README` file may outline decisions I have made for the
 purposes of streamlining the program, feel free to find and read those.
-
-One of the earlier exercises has a string-matching algorithm implementation which I found quite interesting to work on.
